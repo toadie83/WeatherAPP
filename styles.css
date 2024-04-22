@@ -6,11 +6,22 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/spring AM.jpeg');
+    background-size: cover;
+    z-index: -1;
 }
 
 .container {
     text-align: center;
+    position: relative;
 }
 
 h1 {
@@ -35,6 +46,19 @@ button {
     cursor: pointer;
 }
 
-#weatherInfo {
+.weather-box {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    text-align: left; /* Align text to the left */
     margin-top: 20px;
+    margin-left: 400px;
+    margin-right: 400px;
+    text-align: center;
+}
+
+.weather-box p {
+    font-size: 18px; /* Increase font size for better readability */
+    color: #333; /* Darken text color */
 }
