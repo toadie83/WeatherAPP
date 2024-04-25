@@ -29,11 +29,13 @@ document.addEventListener("DOMContentLoaded", () => {
     function displayWeather(data) {
         const { name, main, weather } = data;
         const temperature = main.temp;
+        const feelslike = main.feels_like;
         const description = weather[0].description;
 
         weatherInfo.innerHTML = `
             <h2>${name}</h2>
             <p>Temperature: ${temperature}°C</p>
+            <p>Feels Like: ${feelslike}°C</p>
             <p>Description: ${description}</p>
         `;
     }
