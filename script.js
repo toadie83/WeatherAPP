@@ -35,6 +35,9 @@ document.addEventListener("DOMContentLoaded", () => {
             <h2>${name}</h2>
             <p>Temperature: ${temperature}°C</p>
             <p>Description: ${description}</p>
+
+
+            
         `;
     }
 });
