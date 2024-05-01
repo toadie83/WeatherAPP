@@ -35,11 +35,8 @@ document.addEventListener("DOMContentLoaded", () => {
         weatherInfo.innerHTML = `
             <h2>${name}</h2>
             <p>Temperature: ${temperature}°C</p>
-            <p>Wind Speed: ${windspeed}mph</p>
-            <p>Description: ${description}</p>
-
-
-            
+            <p>Wind Speed: ${windspeed}m/s</p>
+            <p>Description: ${description}</p>            
         `;
     }
 });
