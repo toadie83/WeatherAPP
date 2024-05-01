@@ -27,15 +27,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function displayWeather(data) {
-        const { name, main, weather, wind } = data;
-        const temperature = main.temp;
-        const windspeed = wind.speed;     
+        const { name, main, weather } = data;
+        const temperature = main.temp;   
         const description = weather[0].description;
 
         weatherInfo.innerHTML = `
             <h2>${name}</h2>
             <p>Temperature: ${temperature}°C</p>
-            <p>Wind Speed: ${windspeed}m/s</p>
             <p>Description: ${description}</p>            
         `;
     }
